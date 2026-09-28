@@ -1,4 +1,4 @@
-# DraftGPT
+Set-Content -Path "README.md" -Value '# DraftGPT
 
 An interactive project powered by Python and AI. DraftGPT streamlines drafting, text generation, and data processing workflows using modern LLM integrations.
 
@@ -14,66 +14,74 @@ An interactive project powered by Python and AI. DraftGPT streamlines drafting, 
 
 ## 🛠️ Prerequisites
 
-Ensure you have the following installed on your machine before setup:
+Ensure you have the following installed on your machine before starting:
 
-- **Python 3.10+**
-- **Git**
-- **Virtual Environment** (`venv` or `conda`)
+- **Python**: Version 3.10 or higher
+- **Git**: Installed and configured on your system
+- **Virtual Environment**: `venv` or `conda`
 
 ---
 
 ## 📥 Installation Setup
 
-Follow these steps to set up the project locally:
+Follow these steps to set up and run the project locally on your machine:
 
-1. **Clone the repository**:
-   ```bash
-   git clone [https://github.com/Arfan10/Dragtgpt.git](https://github.com/Arfan10/Dragtgpt.git)
-   cd Dragtgpt
+### 1. Clone the Repository
+    git clone https://github.com/Arfan10/Dragtgpt.git
+    cd Dragtgpt
 
+### 2. Set Up a Virtual Environment
+- **Windows (PowerShell)**:
+    python -m venv .venv
+    .\.venv\Scripts\Activate.ps1
 
-   Create and activate a virtual environment:Windows (PowerShell):PowerShellpython -m venv .venv
-.\.venv\Scripts\Activate.ps1
-Linux / macOS:Bashpython3 -m venv .venv
-source .venv/bin/activate
-Install dependencies:Bashpip install -r requirements.txt
-Environment Configuration:Create a .env file in the root directory and add required keys:Code snippetOPENAI_API_KEY=your_api_key_here
-Run the Application:Bashpython main.py
-🤝 Contribution GuidelinesWe welcome contributions! To contribute to DraftGPT, follow the standard open-source workflow:Steps to Contribute:Fork the Repository: Click the Fork button at the top right of the GitHub repository page.Clone Your Fork:Bashgit clone [https://github.com/YOUR_USERNAME/Dragtgpt.git](https://github.com/YOUR_USERNAME/Dragtgpt.git)
-cd Dragtgpt
-Create a Feature Branch:Bashgit checkout -b feature/your-feature-name
-Commit Your Changes:Bashgit add .
-git commit -m "Add feature: described your change"
-Push to Your Fork:Bashgit push origin feature/your-feature-name
-Open a Pull Request: Go to the original repository on GitHub (Arfan10/Dragtgpt) and click Compare & pull request.📄 LicenseThis project is licensed under the MIT License.
+- **Linux / macOS**:
+    python3 -m venv .venv
+    source .venv/bin/activate
+
+### 3. Install Dependencies
+    pip install -r requirements.txt
+
+### 4. Configure Environment Variables
+Create a `.env` file in the root directory of the project and add your API credentials:
+    OPENAI_API_KEY=your_api_key_here
+
+### 5. Run the Application
+    python main.py
+
 ---
 
-### Step 2: Push the README to GitHub
+## 🤝 Contribution Guidelines
 
-Run these commands in PowerShell to add the new `README.md` and update your GitHub repository:
+We welcome contributions from the community! Follow these standard guidelines to submit features, bug fixes, or documentation updates:
 
-<Sequence>
-  <Step subtitle="Stage file" title="1. Stage the README.md">
-    ```powershell
-    git add README.md
-    ```
-  </Step>
+### Code of Conduct & Standards
+- Keep code clean, readable, and well-commented.
+- Ensure all credentials and sensitive data remain in `.env` and are never committed.
+- Test your changes locally before submitting a pull request.
 
-  <Step subtitle="Save commit" title="2. Commit the Changes">
-    ```powershell
-    git commit -m "Docs: Add README.md with installation and contribution guide"
-    ```
-  </Step>
+### Step-by-Step Contribution Process
 
-  <Step subtitle="Upload to GitHub" title="3. Push to GitHub">
-    ```powershell
-    git push origin main
-    ```
-    *Verification:* Visit `[https://github.com/Arfan10/Dragtgpt](https://github.com/Arfan10/Dragtgpt)` in your browser—the README will render on the main repository page.
-  </Step>
-</Sequence>
+1. **Fork the Repository**: Click the **Fork** button at the top right of the GitHub repository page to create your copy.
 
-<Elicitations message="What would you like to set up next for your repo?">
-  <Elicitation label="Create a .gitignore file" query="How do I create a Python .gitignore file to ignore .venv and cache files?"/>
-  <Elicitation label="Create a LICENSE file" query="How do I add an MIT License file to my GitHub repository in the terminal?"/>
-</Elicitations>
+2. **Clone Your Fork**:
+    git clone https://github.com/YOUR_USERNAME/Dragtgpt.git
+    cd Dragtgpt
+
+3. **Create a Feature Branch**:
+    git checkout -b feature/your-feature-name
+
+4. **Make and Commit Your Changes**:
+    git add .
+    git commit -m "feat: add clear description of your feature"
+
+5. **Push to Your Fork**:
+    git push origin feature/your-feature-name
+
+6. **Submit a Pull Request (PR)**: Navigate to the original repository (`Arfan10/Dragtgpt`) on GitHub and click **Compare & pull request**. Provide a summary of your changes and submit for review.
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).' -Encoding utf8 ; git add README.md ; git commit -m "Fix markdown rendering" ; git push origin main
