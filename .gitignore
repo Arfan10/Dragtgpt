@@ -1,0 +1,26 @@
+# Python & Environment
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+*.env
+
+# CAD Uploads & Generated Outputs
+uploads/
+output/
+samples/*.step
+samples/*.stp
+
+# Node / React Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+*.log
+
+# Docker & IDEs
+.idea/
+.vscode/
+*.swp
+.DS_Store
